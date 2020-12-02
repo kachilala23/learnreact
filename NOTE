@@ -72,6 +72,26 @@ To get started with state we override our constructor
 Now we have a state variable which is just an object with property count which by default is set to 
 initialCount and passed in to out component in App.js to enable us use that state.
 
+Next we want to add event listener to out button so that when it is clicked an event occurs
+
+using javascript we usually make use of addEventListener('click', () => {}) method and pass the event in this case
+the click event but in react it is much easier
+we make use of  <button onClick={() => this.changeCount(-1)}>-</button>
+
+we create the method changeCount(amount) and inside of it we are going to set our state.
+To set state we make use of setState method which is available to every single component.
+The set state has two values, the first one is object and the next one is prevstate to get the previous
+state.
+
+Anytime you need to previous state to set the new state you need the function version 
+and anythime you dont use the previous state you need the normal version which is this
+changeCount(amount) {
+        this.setState({count: this.state.count + amount}); 
+    }
+
+
+
+
 
 
 
