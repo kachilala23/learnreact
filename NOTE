@@ -1,0 +1,43 @@
+React Process
+
+What is React
+This is a javascript library for building user interfaces.
+It is a component based system. i.e. combination of different components to 
+
+Get started
+
+// This means create create app in the current folder we are in.
+npx create-react-app .
+
+// This will start your application. It takes time initially.
+npm start
+
+It generates two url for you. If you are online and offline.
+
+In the public folder we have index.html and it contains a gigantic html in it.
+
+In the src folder is where all our application code is going to go.
+index.js in the source folder is what hooks up our html file to our actual javascript.
+
+
+After deleting everything react generated for us we return Hello World from App.js.
+
+ReactDOM.render() method in index.js takes in the <App /> as a parameter and it is using document.getElementById
+to get the id root. The id root can be located in index.html in public folder. 
+
+So index.js is rendering whatsoever is inside the component App. And it is rendering it inside the root id by using the getElementById
+Since App.js is a functional component whatever it returns is what gets rendered in the div with root id.
+
+Rendring just string is not very useful we actually want to render html and to do that we make use of what is known as JSX.
+
+JSX
+This helps us to write html inside of our javascript. Like we know writing html inside javscript is very complex but with JSX it makes 
+it faily easy.
+
+To test this out in the App component we will change the returned string to html by wrapping it in an html tag.
+We need to either make use of JSX fragment <></> and wrap everything within it or we make use of a div.
+
+We are going to make a counter app to help us understand react.
+
+
+
