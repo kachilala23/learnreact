@@ -38,6 +38,45 @@ To test this out in the App component we will change the returned string to html
 We need to either make use of JSX fragment <></> and wrap everything within it or we make use of a div.
 
 We are going to make a counter app to help us understand react.
+To make use of css class inside JSX we use className instead of the regular class because class is a reserved 
+word.
+
+Component
+Components let you split the UI into independent, reusable pieces, and think about each piece in isolation.
+
+Class Component
+We create a class component and make use of it in the app component which delivers it to the index.html.
+Everything works fine.
+
+Props
+This is also known as properties. We can declare it inside of a component.
+to access properties we make use of the key work this.props
+in our case we are making use of the counter props created in the counter component.
+
+To render our props we make use of two curly braces.
+
+If we want to make our site reactive, we need to make use of what is called state.
+Every time you change state in your component it is going to re render that component to make
+it work with that state you currently just changed.
+
+To get started with state we override our constructor
+
+ constructor(props) {
+        super(props)
+
+        this.state = {
+            count: this.initialCount
+        }
+    }
+    
+Now we have a state variable which is just an object with property count which by default is set to 
+initialCount and passed in to out component in App.js to enable us use that state.
+
+
+
+
+
+
 
 
 
