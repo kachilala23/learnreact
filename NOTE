@@ -92,6 +92,29 @@ changeCount(amount) {
 I have created customHooks to replicate the same functionality for useState.
 Hooks well within a functional component while useState works well within a class component.
 
+Context API
+This helps us pass values deeply into our stack of components without having to pass it down manually
+every time.
+
+For example we can define our context inside our app and we can access it from any of the component
+that app has as well as any of the child component. It kind of work like a global variable 
+
+A context has two portions to it. A provider and a consumer 
+The provider allows us to pass out a value and the consumer consumes the value.
+
+Sample Theme Context
+
+export const ThemeContext = React.createContext()
+
+After setting up the theme context with the providers, we first of show how to work with it in a class component
+then later show how to work with it in a functional component  which pretty easier
+
+
+
+
+
+
+
 
 
 
