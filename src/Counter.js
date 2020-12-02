@@ -6,7 +6,7 @@ export default class Counter extends Component {
         super(props)
 
         this.state = {
-            count: this.initialCount
+            count: props.initialCount
         }
     }
     
@@ -14,7 +14,7 @@ export default class Counter extends Component {
         return (
             <div>
             <button className="">-</button>
-        <span>{this.props.initialCount}</span>
+        <span>{this.state.count}</span>
             <button className="">+</button>
           </div>
         )
