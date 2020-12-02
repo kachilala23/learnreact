@@ -89,6 +89,9 @@ changeCount(amount) {
         this.setState({count: this.state.count + amount}); 
     }
 
+I have created customHooks to replicate the same functionality for useState.
+Hooks well within a functional component while useState works well within a class component.
+
 
 
 
